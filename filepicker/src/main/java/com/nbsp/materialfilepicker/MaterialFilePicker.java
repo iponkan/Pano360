@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 public class MaterialFilePicker {
     private Activity mActivity;
     private Fragment mFragment;
-    private android.support.v4.app.Fragment mSupportFragment;
+    private androidx.fragment.app.Fragment mSupportFragment;
 
     private Integer mRequestCode;
     private Pattern mFileFilter;
@@ -63,7 +63,7 @@ public class MaterialFilePicker {
      * Specifies support fragment which will be used to
      * start file picker
      */
-    public MaterialFilePicker withSupportFragment(android.support.v4.app.Fragment fragment) {
+    public MaterialFilePicker withSupportFragment(androidx.fragment.app.Fragment fragment) {
         if (mActivity != null || mFragment != null) {
             throw new RuntimeException("You must pass either Activity, Fragment or SupportFragment");
         }
@@ -180,7 +180,7 @@ public class MaterialFilePicker {
      * You should set Activity or Fragment before calling this method
      * @see MaterialFilePicker#withActivity(Activity)
      * @see MaterialFilePicker#withFragment(Fragment)
-     * @see MaterialFilePicker#withSupportFragment(android.support.v4.app.Fragment)
+     * @see MaterialFilePicker#withSupportFragment(androidx.fragment.app.Fragment)
      */
     public void start() {
         if (mActivity == null && mFragment == null && mSupportFragment == null) {

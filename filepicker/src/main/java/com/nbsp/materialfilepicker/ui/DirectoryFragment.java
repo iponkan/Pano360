@@ -3,11 +3,12 @@ package com.nbsp.materialfilepicker.ui;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.nbsp.materialfilepicker.R;
 import com.nbsp.materialfilepicker.filter.CompositeFilter;
@@ -15,8 +16,6 @@ import com.nbsp.materialfilepicker.utils.FileUtils;
 import com.nbsp.materialfilepicker.widget.EmptyRecyclerView;
 
 import java.io.File;
-import java.io.FileFilter;
-import java.util.ArrayList;
 
 /**
  * Created by Dimorinny on 24.10.15.
